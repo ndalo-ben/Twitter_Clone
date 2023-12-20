@@ -1,5 +1,7 @@
 import SidebarMenuItem from './SidebarMenuItem'
 import Image from 'next/image'
+import { HomeIcon } from "@heroicons/react/solid"
+import { HashtagIcon, BellIcon, InboxIcon, BookmarkIcon, ClipboardIcon, DotsCircleHorizontalIcon, UserIcon, DotsHorizontalIcon } from '@heroicons/react/outline'
 
 
 function Sidebar() {
@@ -21,35 +23,35 @@ function Sidebar() {
       <div className="flex flex-col py-4 gap-2">
         <SidebarMenuItem
           text="Home"
-        // Icon={HomeIcon}
+          Icon={HomeIcon}
         />
         <SidebarMenuItem
           text="Explore"
-        // Icon={HashtagIcon}
+          Icon={HashtagIcon}
         />
         <SidebarMenuItem
           text="Notifications"
-        // Icon={BellIcon}
+          Icon={BellIcon}
         />
         <SidebarMenuItem
           text="Messages"
-        // Icon={InboxIcon}
+          Icon={InboxIcon}
         />
         <SidebarMenuItem
           text="Bookmarks"
-        // Icon={BookmarkIcon}
+          Icon={BookmarkIcon}
         />
         <SidebarMenuItem
           text="Lists"
-        // Icon={ClipboardIcon}
+          Icon={ClipboardIcon}
         />
         <SidebarMenuItem
           text="Profile"
-        // Icon={UserIcon}
+          Icon={UserIcon}
         />
         <SidebarMenuItem
           text="More"
-        // Icon={DotsCircleHorizontalIcon}
+          Icon={DotsCircleHorizontalIcon}
         />
       </div>
       {/* tweet button  */}
@@ -74,9 +76,8 @@ function Sidebar() {
           <h4>TechWolf</h4>
           <p>@techwolf_dev</p>
         </div>
-        <span>...</span>
-        {/* <DotsHorizonalIcon className='h-5' /> */}
-          
+        <DotsHorizontalIcon className='h-5' />
+
       </div>
 
     </div>
