@@ -6,9 +6,9 @@ import { HashtagIcon, BellIcon, InboxIcon, BookmarkIcon, ClipboardIcon, DotsCirc
 
 function Sidebar() {
   return (
-    <div className='hidden sm:flex flex-col gap-4 items-center xl:items-center xl:w-[340px] p-2 fixed h-full'>
+    <div className='hidden sm:flex flex-col gap-4 items-center xl:items-start xl:w-[340px] p-2 fixed h-full'>
       {/* logo  */}
-      <div className='relative flex items-center justify-center w-14 h-14 hoverAnimation p-0 xl:ml-24'>
+      <div className='relative hoverEffect flex items-center justify-center w-14 h-14 xl:px-1 bg:blue-100'>
         <Image
           src={"/logo.jpeg"}
           alt="logo"
@@ -20,7 +20,7 @@ function Sidebar() {
       </div>
 
       {/* menu  */}
-      <div className="flex flex-col py-4 gap-2">
+      <div className="mt-4 mb-2.5 xl:items-start">
         <SidebarMenuItem
           text="Home"
           Icon={HomeIcon}
@@ -55,12 +55,12 @@ function Sidebar() {
         />
       </div>
       {/* tweet button  */}
-      <button className='bg-blue-700 px-8 py-1 rounded-md '>
+      <button className='bg-blue-400 text-white rounded-full w-56 h-12 font-bold shadow-md hover:brightness-95 text-lg hidden xl:inline'>
         Tweet
       </button>
 
       {/* mini profile  */}
-      <div className="flex items-center justify-between gap-2 px-1 py-1 rounded-md border">
+      <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
         <div className="relative h-12 w-12 rounded-full border">
           <Image
             src={"/logo.jpeg"}
@@ -69,14 +69,14 @@ function Sidebar() {
             priority
             quality={100}
             sizes='lg'
-            className='rounded-full'
+            className='rounded-full xl:mr-2'
           />
         </div>
-        <div className="text-sm">
-          <h4>TechWolf</h4>
-          <p>@techwolf_dev</p>
+        <div className="leading-5 hidden xl:inline">
+          <h4 className='font-bold'>TechWolf</h4>
+          <p className='text-gray-500 '>@techwolf_dev</p>
         </div>
-        <DotsHorizontalIcon className='h-5' />
+        <DotsHorizontalIcon className='h-5 xl:ml-8 hidden xl:inline' />
 
       </div>
 

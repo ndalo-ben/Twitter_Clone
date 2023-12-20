@@ -8,7 +8,7 @@ export default function Home() {
         <title>Twitter Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-black min-h-screen flex max-w-[1500px] mx-auto">
+      <main className="min-h-screen flex max-w-7xl mx-auto">
         <Sidebar />
       </main>
     </main>
