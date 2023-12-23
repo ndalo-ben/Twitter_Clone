@@ -8,12 +8,13 @@ export default function Input() {
         <div className='flex border-b border-gray-200 p-3 space-x-3 '>
             <div className="relative h-11 w-11 rounded-full cursor-pointer hover:brightness-95">
                 <Image
-                    src={"/logo.jpeg"}
+                    src={"/user.jpeg"}
                     alt="logo"
                     fill
                     priority
                     quality={100}
                     sizes='lg'
+                    className='rounded-full'
                 />
             </div>
 

@@ -63,7 +63,7 @@ function Sidebar() {
       <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto">
         <div className="relative h-12 w-12 rounded-full border">
           <Image
-            src={"/logo.jpeg"}
+            src={"/user.jpeg"}
             alt='profile'
             fill
             priority
