@@ -1,5 +1,6 @@
 import Sidebar from './components/Sidebar';
 import Feed from './components/Feed'
+import Widgets from './components/Widgets'
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
 
         {/* feed  */}
         <Feed />
+        {/* widgets  */}
+        <Widgets />
       </main>
     </main>
 
